@@ -1,10 +1,10 @@
-#######################################
-#                                     #
-#  The Collatz Conjecture - Das Collatz-Problem #
-#  Thomas Hoppe January 2022          #
-#  https://github.com/Thomas20232030  #
-#                                     #
-#######################################
+###########################################################
+#                                                         #
+#  The Collatz Problem - Das Collatz-Problem              #
+#  Thomas Hoppe January 2022                              #
+#  https://github.com/Thomas20232030/The-Collatz-Problem  #
+#                                                         #
+###########################################################
 
 import time
 import matplotlib.pyplot as plt
