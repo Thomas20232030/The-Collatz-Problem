@@ -52,7 +52,7 @@ while True:
 
         input("\nWeiter mit jeder beliebigen Taste...")
 
-    if auswahl == "2":
+    elif auswahl == "2":
 
         while True:
             try:
