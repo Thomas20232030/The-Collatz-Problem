@@ -50,8 +50,6 @@ while True:
         print("Mathematik. Mehrfach wurden Preise für eine Lösung ausgelobt...")
         print("\nWikipedia https://de.wikipedia.org/w/index.php?title=Collatz-Problem&oldid=217796154")
 
-        input("\nWeiter mit jeder beliebigen Taste...")
-
     elif auswahl == "2":
 
         while True:
