@@ -91,6 +91,14 @@ while True:
         plt.xlabel("Intervall")
         plt.show()
 
+        plt.title("Die längste Folge bei " + str(max(collatz(collatzmaxzahl))))
+        plt.plot(collatz(collatzmaxzahl))
+        plt.grid(True)
+        plt.axis()
+        plt.ylabel("Wert der Folge")
+        plt.xlabel("Anzahl")
+        plt.show()
+
     elif auswahl == "0":
 
         print("\nDas Programm wird beendet...")
