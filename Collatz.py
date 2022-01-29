@@ -76,14 +76,15 @@ while True:
         m, s = divmod(delta, 60)
         h, m = divmod(m, 60)
 
-        print(f"\nAusgabe der Folgen: \n\n{laengen}")
+        print(f"\nAusgabe der Länge der Folgen: \n\n{laengen}")
         print(f"\nAusgabe von {anfang:,.0f} bis {ende:,.0f} und insgesamt {ende - anfang + 1:,.0f} Folge(n)")
         print(f"Die längste Folge macht {collatzmaxwert:,.0f} Schritte bei der Zahl {collatzmaxzahl:,.0f}\n")
         print(collatz(collatzmaxzahl))
         print(f"\nDie größe erreichte Zahl ist {max(collatz(collatzmaxzahl)):,.0f}")
         print(f"\nDauer in Stunden, Minuten und Sekunden: {h:02}:{m:02}:{s:02}")
 
-        plt.title("Die Collatzwerte von " + str(anfang) + " bis " + str(ende))
+        plt.get_current_fig_manager().set_window_title('Die Länge der Collatzfolgen')
+        plt.title("Die Länge der Collatzfolgen von " + str(anfang) + " bis " + str(ende))
         plt.scatter(list(range(anfang, ende + 1)), laengen)
         plt.grid(True)
         plt.axis()
@@ -91,12 +92,13 @@ while True:
         plt.xlabel("Intervall")
         plt.show()
 
-        plt.title("Die längste Folge bei " + str(max(collatz(collatzmaxzahl))))
+        plt.get_current_fig_manager().set_window_title('Die längste Collatzfolge')
+        plt.title("Die Zahl " + str(collatzmaxzahl)+" erreicht " + str(max(collatz(collatzmaxzahl))))
         plt.plot(collatz(collatzmaxzahl))
         plt.grid(True)
         plt.axis()
         plt.ylabel("Wert der Folge")
-        plt.xlabel("Anzahl")
+        plt.xlabel("Diese Folge erreicht die Zahl 1 nach "+str(collatzmaxwert)+" Schhritten")
         plt.show()
 
     elif auswahl == "0":
