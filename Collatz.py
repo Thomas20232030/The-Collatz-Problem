@@ -80,7 +80,7 @@ while True:
         print(f"\nAusgabe von {anfang:,.0f} bis {ende:,.0f} und insgesamt {ende - anfang + 1:,.0f} Folge(n)")
         print(f"Die längste Folge macht {collatzmaxwert:,.0f} Schritte bei der Zahl {collatzmaxzahl:,.0f}\n")
         print(collatz(collatzmaxzahl))
-        print(f"\nDie größe erreichte Zahl ist {max(collatz(collatzmaxzahl)):,.0f}")
+        print(f"\nDie größte erreichte Zahl ist {max(collatz(collatzmaxzahl)):,.0f}")
         print(f"\nDauer in Stunden, Minuten und Sekunden: {h:02}:{m:02}:{s:02}")
 
         plt.get_current_fig_manager().set_window_title('Die Länge der Collatzfolgen')
